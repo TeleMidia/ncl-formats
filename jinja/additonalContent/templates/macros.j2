@@ -1,0 +1,27 @@
+{% macro nutshell(component, link_param, connector, role) %}
+		<link xconnector="{{'conBase#' .. connector}}">
+			<bind role="{{role}}" component="{{component}}"/>
+		{%if link_param ~= nil%}
+			<linkParam name="keyCode" value="{{link_param}}"/>
+		{% endif %}
+			{{ caller () }}	
+		</link>
+{% endmacro %}
+{# endmacro nutshell #}
+
+{% macro setAction(name, values) -%}
+	{%+ for i in values %}
+			<bind role="{{name}}" component="{{i}}"/>
+	{% endfor %}
+{% endmacro %}
+{# endmacro setAction #}
+
+{% macro setEnv() %}
+	{% set key = {'RED', 'GREEN', 'YELLOW', 'BLUE'} %}
+	{% set buttons = {} %} 
+	{% for i in files_list.buttons %}
+		{% set buttons = table.insert(buttons, i.name) %}
+	{% endfor %}  
+	{{ caller (key,buttons) }}
+{% endmacro %}
+{# endmacro setenv #}
