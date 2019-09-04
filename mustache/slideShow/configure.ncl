@@ -15,7 +15,7 @@
     <body>
         <port id="template-handler" component="template_processor"/>
         <media id="final_ncl" src="slideShow.ncl"/>
-        <media id="template_processor" src="template_processor.lua">
+        <media id="template_processor" src="ncl-formats.lua">
             <property name="engine" value="mustache"/>
             <property name="template" value="slideShow.ncl.mustache"/>
             <property name="partial1" value="medias.ncl.j2"/>
