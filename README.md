@@ -1,7 +1,7 @@
 # ncl-formats
 
-ncl-formats is a NCL document tool for (1) template processing and (2) file convert.  
-It can convert to NCL from the following formats:
+ncl-formats is a pure-lua tool for (1) template processing and (2) file convert NCL documents.
+More precisily, it can handle the following formats:
 
 * web templates languages
   * [Jinja2](http://jinja.pocoo.org)  
