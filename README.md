@@ -34,7 +34,7 @@ It can convert to NCL from the following formats:
   * [NCL-ltab](http://www.telemidia.puc-rio.br/files/biblio/2018_09_dodsworth.pdf)  
   TODO.
   
-  * [JNCL]: (http://www.midiacom.uff.br/~caleb/jns/)  
+  * [JNCL](http://www.midiacom.uff.br/~caleb/jns/)  
   TODO.
   
   
