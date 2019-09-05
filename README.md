@@ -1,6 +1,6 @@
 # ncl-formats
 
-ncl-formats is tool for template processing and convert NCL documents.  
+ncl-formats is a NCL document tool for (1) template processing and (2) file convert.  
 It can convert to NCL from the following formats:
 
 * web templates languages
