@@ -135,16 +135,16 @@
     	</media>
 
 		<media id="mBegin" descriptor="desBegin" src="media/info.png"/>
-		<media id="mExit" descriptor="desExit" src="media/salir.png"/>
+		<media id="mExit" descriptor="desExit" src="media/exit.png"/>
 		
 		<media id="mReg" descriptor="desReg" src="media/reg.png"/>
 
-		<media id="mRed" src ="media/rojo.png" descriptor="desButton1"/>
-    	<media id="mRed1" src ="media/rojo.png" descriptor="desButton1_1"/>
-		<media id="mRedRight" src="media/dere.png" descriptor="desButton1Right"/> 
-		<media id="mRedLeft" src="media/izq.png" descriptor="desButton1Right"/> 
-		<media id="mRedBg" src ="media/fondo.png" descriptor="desButton1Bg"/>
-		<media id="mRedTitle" src="media/tituloRojo.txt" descriptor="desButton1Title">
+		<media id="mRed" src ="media/red.png" descriptor="desButton1"/>
+    	<media id="mRed1" src ="media/red.png" descriptor="desButton1_1"/>
+		<media id="mRedRight" src="media/right.png" descriptor="desButton1Right"/> 
+		<media id="mRedLeft" src="media/left.png" descriptor="desButton1Right"/> 
+		<media id="mRedBg" src ="media/background.png" descriptor="desButton1Bg"/>
+		<media id="mRedTitle" src="media/redTitle.txt" descriptor="desButton1Title">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -154,7 +154,7 @@
 			<property name="zIndex" value="3"/>
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mRedTitle1" src="media/tituloRojo.txt" descriptor="desButton1Title1">
+		<media id="mRedTitle1" src="media/redTitle.txt" descriptor="desButton1Title1">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -164,7 +164,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mRedInfo" src="media/infoRojo1.txt" descriptor="desButton1Info">
+		<media id="mRedInfo" src="media/redInfo1.txt" descriptor="desButton1Info">
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
@@ -174,7 +174,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mRedInfo1" src="media/infoRojo2.txt" descriptor="desButton1Info1">
+		<media id="mRedInfo1" src="media/redInfo2.txt" descriptor="desButton1Info1">
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
@@ -185,12 +185,12 @@
 			<property name="fontFamily" value="Tiresias"/>
 		</media> 
 
-		<media id="mGreen" src ="media/verde.png" descriptor="desButton2"/>
-    	<media id="mGreen1" src ="media/verde.png" descriptor="desButton2_1"/>
-		<media id="mGreenRight" src="media/dere.png" descriptor="desButton2Right"/> 
-		<media id="mGreenLeft" src="media/izq.png" descriptor="desButton2Right"/> 
-		<media id="mGreenBg" src ="media/fondo.png" descriptor="desButton2Bg"/>
-		<media id="mGreenTitle" src="media/tituloVerde.txt" descriptor="desButton2Title">
+		<media id="mGreen" src ="media/green.png" descriptor="desButton2"/>
+    	<media id="mGreen1" src ="media/green.png" descriptor="desButton2_1"/>
+		<media id="mGreenRight" src="media/right.png" descriptor="desButton2Right"/> 
+		<media id="mGreenLeft" src="media/left.png" descriptor="desButton2Right"/> 
+		<media id="mGreenBg" src ="media/background.png" descriptor="desButton2Bg"/>
+		<media id="mGreenTitle" src="media/greenTitle.txt" descriptor="desButton2Title">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -200,7 +200,7 @@
 			<property name="zIndex" value="3"/>
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mGreenTitle1" src="media/tituloVerde.txt" descriptor="desButton2Title1">
+		<media id="mGreenTitle1" src="media/greenTitle.txt" descriptor="desButton2Title1">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -210,7 +210,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mGreenInfo" src="media/infoVerde1.txt" descriptor="desButton2Info">
+		<media id="mGreenInfo" src="media/greenInfo1.txt" descriptor="desButton2Info">
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
@@ -220,7 +220,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mGreenInfo1" src="media/infoVerde2.txt" descriptor="desButton2Info1">
+		<media id="mGreenInfo1" src="media/greenInfo2.txt" descriptor="desButton2Info1">
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
@@ -231,12 +231,12 @@
 			<property name="fontFamily" value="Tiresias"/>
 		</media> 
 
-		<media id="mYellow" src ="media/amarillo.png" descriptor="desButton3"/>
-    	<media id="mYellow1" src ="media/amarillo.png" descriptor="desButton3_1"/>
-		<media id="mYellowRight" src="media/dere.png" descriptor="desButton3Right"/> 
-		<media id="mYellowLeft" src="media/izq.png" descriptor="desButton3Right"/> 
-		<media id="mYellowBg" src ="media/fondo.png" descriptor="desButton3Bg"/>
-		<media id="mYellowTitle" src="media/tituloAmar.txt" descriptor="desButton3Title">
+		<media id="mYellow" src ="media/yellow.png" descriptor="desButton3"/>
+    	<media id="mYellow1" src ="media/yellow.png" descriptor="desButton3_1"/>
+		<media id="mYellowRight" src="media/right.png" descriptor="desButton3Right"/> 
+		<media id="mYellowLeft" src="media/left.png" descriptor="desButton3Right"/> 
+		<media id="mYellowBg" src ="media/background.png" descriptor="desButton3Bg"/>
+		<media id="mYellowTitle" src="media/yellowTitle.txt" descriptor="desButton3Title">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -246,7 +246,7 @@
 			<property name="zIndex" value="3"/>
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mYellowTitle1" src="media/tituloAmar.txt" descriptor="desButton3Title1">
+		<media id="mYellowTitle1" src="media/yellowTitle.txt" descriptor="desButton3Title1">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -256,7 +256,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mYellowInfo" src="media/infoAma1.txt" descriptor="desButton3Info">
+		<media id="mYellowInfo" src="media/yellowInfo1.txt" descriptor="desButton3Info">
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
@@ -266,7 +266,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mYellowInfo1" src="media/infoAma2.txt" descriptor="desButton3Info1">
+		<media id="mYellowInfo1" src="media/yellowInfo2.txt" descriptor="desButton3Info1">
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
@@ -277,12 +277,12 @@
 			<property name="fontFamily" value="Tiresias"/>
 		</media> 
 
-		<media id="mBlue" src ="media/azul.png" descriptor="desButton4"/>
-    	<media id="mBlue1" src ="media/azul.png" descriptor="desButton4_1"/>
-		<media id="mBlueRight" src="media/dere.png" descriptor="desButton4Right"/> 
-		<media id="mBlueLeft" src="media/izq.png" descriptor="desButton4Right"/> 
-		<media id="mBlueBg" src ="media/fondo.png" descriptor="desButton4Bg"/>
-		<media id="mBlueTitle" src="media/tituloAzul.txt" descriptor="desButton4Title">
+		<media id="mBlue" src ="media/blue.png" descriptor="desButton4"/>
+    	<media id="mBlue1" src ="media/blue.png" descriptor="desButton4_1"/>
+		<media id="mBlueRight" src="media/right.png" descriptor="desButton4Right"/> 
+		<media id="mBlueLeft" src="media/left.png" descriptor="desButton4Right"/> 
+		<media id="mBlueBg" src ="media/background.png" descriptor="desButton4Bg"/>
+		<media id="mBlueTitle" src="media/blueTitle.txt" descriptor="desButton4Title">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -292,7 +292,7 @@
 			<property name="zIndex" value="3"/>
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mBlueTitle1" src="media/tituloAzul.txt" descriptor="desButton4Title1">
+		<media id="mBlueTitle1" src="media/blueTitle.txt" descriptor="desButton4Title1">
 			<property name="width" value="20%"/>
 			<property name="height" value="5%"/>
 			<property name="left" value="74%"/>
@@ -302,7 +302,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mBlueInfo" src="media/foto1.jpg" descriptor="desButton4Info">
+		<media id="mBlueInfo" src="media/picture1.jpg" descriptor="desButton4Info">
 			<property name="width" value="23%"/>
 			<property name="height" value="53%"/>
 			<property name="left" value="70%"/>
@@ -312,7 +312,7 @@
 			<property name="zIndex" value="3"/> 
 			<property name="fontFamily" value="Tiresias"/>
 		</media>
-		<media id="mBlueInfo1" src="media/foto2.jpg" descriptor="desButton4Info1">
+		<media id="mBlueInfo1" src="media/picture2.jpg" descriptor="desButton4Info1">
 			<property name="width" value="23%"/>
 			<property name="height" value="53%"/>
 			<property name="left" value="70%"/>

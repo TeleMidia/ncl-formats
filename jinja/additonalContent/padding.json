@@ -1,48 +1,48 @@
 {
     "video" : "video.mp4",
     "begin" : "info.png",
-    "close"   : "salir.png",
+    "close" : "exit.png",
     "reg"   : "reg.png",
     "buttons" : [
         {   
             "name"  : "Red",
-            "image" : "rojo.png",
-            "title" : "tituloRojo.txt",
-            "info"  : "infoRojo1.txt",
-            "infoPlus" : "infoRojo2.txt",
-            "background" : "fondo.png",
-            "left"  : "izq.png",
-            "right" : "dere.png"
+            "image" : "red.png",
+            "title" : "redTitle.txt",
+            "info"  : "redInfo1.txt",
+            "infoPlus" : "redInfo2.txt",
+            "background" : "background.png",
+            "left"  : "left.png",
+            "right" : "right.png"
         }, 
         { 
             "name"  : "Green",
-            "image" : "verde.png",
-            "title" : "tituloVerde.txt",
-            "info"  : "infoVerde1.txt",
-            "infoPlus" : "infoVerde2.txt",
-            "background" : "fondo.png",
-            "left"  : "izq.png",
-            "right" : "dere.png"
+            "image" : "green.png",
+            "title" : "greenTitle.txt",
+            "info"  : "greenInfo1.txt",
+            "infoPlus" : "greenInfo2.txt",
+            "background" : "background.png",
+            "left"  : "left.png",
+            "right" : "right.png"
         }, 
         {
             "name"  : "Yellow",
-            "image" : "amarillo.png",
-            "title" : "tituloAmar.txt",
-            "info"  : "infoAma1.txt",
-            "infoPlus" : "infoAma2.txt",
-            "background" : "fondo.png",
-            "left"  : "izq.png",
-            "right" : "dere.png"
+            "image" : "yellow.png",
+            "title" : "yellowTitle.txt",
+            "info"  : "yellowInfo1.txt",
+            "infoPlus" : "yellowInfo2.txt",
+            "background" : "background.png",
+            "left"  : "left.png",
+            "right" : "right.png"
         },
         {
             "name"  : "Blue",
-            "image" : "azul.png",
-            "title" : "tituloAzul.txt",
-            "info"  : "foto1.jpg",
-            "infoPlus" : "foto2.jpg",
-            "background" : "fondo.png",
-            "left"  : "izq.png",
-            "right" : "dere.png"
+            "image" : "blue.png",
+            "title" : "blueTitle.txt",
+            "info"  : "picture1.jpg",
+            "infoPlus" : "picture2.jpg",
+            "background" : "background.png",
+            "left"  : "left.png",
+            "right" : "right.png"
         }
     ]  
 }
