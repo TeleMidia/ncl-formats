@@ -1,8 +1,8 @@
-País: EE.UU.
-Idioma: Inglés
-Fecha de Lanzamiento: 
-31 de octubre de 2016
-Duracíon: 7min
-Presupuesto: $4.000
-Producíon:
+Country: USA
+Idioma: English
+Release Date: 
+31 October 2016
+Runtime: 7min
+Budget: $4.000
+Production Co:
 38film Productions
