@@ -138,7 +138,6 @@
 		<media id="mExit" descriptor="desExit" src="media/exit.png"/>
 		
 		<media id="mReg" descriptor="desReg" src="media/reg.png"/>
-
 		<media id="mRed" src ="media/red.png" descriptor="desButton1"/>
     	<media id="mRed1" src ="media/red.png" descriptor="desButton1_1"/>
 		<media id="mRedRight" src="media/right.png" descriptor="desButton1Right"/> 
@@ -429,7 +428,7 @@
 					
 	
 		</link>
-					<link xconnector="conBase#onKeySelectionStopNStartN">
+				<link xconnector="conBase#onKeySelectionStopNStartN">
 			<bind role="onSelection" component="mRed"/>
 			<linkParam name="keyCode" value="RED"/>
 						<bind role="stop" component="mRed"/>
@@ -517,8 +516,7 @@
 			<bind role="start" component="mBlueInfo"/>	
 			
 		</link>
-
-						<link xconnector="conBase#onKeySelectionStartNStopN">
+					<link xconnector="conBase#onKeySelectionStartNStopN">
 			<bind role="onSelection" component="mYellow1"/>
 			<linkParam name="keyCode" value="YELLOW"/>
 						<bind role="stop" component="mBlue1"/>
@@ -582,8 +580,7 @@
 	
 	
 		</link>
-
-				<link xconnector="conBase#onBeginStartNStopN">
+			<link xconnector="conBase#onBeginStartNStopN">
 			<bind role="onBegin" component="mRedBg"/>
 			<linkParam name="keyCode" value="RED"/>
 					<bind role="start" component="mRedRight"/>
@@ -599,8 +596,7 @@
 
 	
 		</link>
-
-				<link xconnector="conBase#onBeginStartNStopN">
+			<link xconnector="conBase#onBeginStartNStopN">
 			<bind role="onBegin" component="mGreenBg"/>
 			<linkParam name="keyCode" value="GREEN"/>
 					<bind role="start" component="mGreenRight"/>
@@ -616,8 +612,7 @@
 
 	
 		</link>
-
-				<link xconnector="conBase#onBeginStartNStopN">
+			<link xconnector="conBase#onBeginStartNStopN">
 			<bind role="onBegin" component="mYellowBg"/>
 			<linkParam name="keyCode" value="YELLOW"/>
 					<bind role="start" component="mYellowRight"/>
@@ -633,8 +628,7 @@
 
 	
 		</link>
-
-				<link xconnector="conBase#onBeginStartNStopN">
+			<link xconnector="conBase#onBeginStartNStopN">
 			<bind role="onBegin" component="mBlueBg"/>
 			<linkParam name="keyCode" value="BLUE"/>
 					<bind role="start" component="mBlueRight"/>
@@ -650,7 +644,6 @@
 
 	
 		</link>
-
 			<link xconnector="conBase#onKeySelectionStartNStopN">
 			<bind role="onSelection" component="mRedRight"/>
 			<linkParam name="keyCode" value="CURSOR_RIGHT"/>
@@ -739,7 +732,7 @@
 				
 	
 		</link>
-				<link xconnector="conBase#onBeginStopN">
+			<link xconnector="conBase#onBeginStopN">
 			<bind role="onBegin" component="mRed"/>
 			<linkParam name="keyCode" value="RED"/>
 						<bind role="stop" component="mRedLeft"/>
@@ -775,6 +768,5 @@
 				
 	
 		</link>
-
 	</body>
 </ncl>
