@@ -167,7 +167,7 @@
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="19%"/>
+			<property name="top" value="19.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 
@@ -177,7 +177,7 @@
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="19%"/>
+			<property name="top" value="19.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 
@@ -213,7 +213,7 @@
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="24%"/>
+			<property name="top" value="24.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 
@@ -223,7 +223,7 @@
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="24%"/>
+			<property name="top" value="24.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 
@@ -259,7 +259,7 @@
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="29%"/>
+			<property name="top" value="29.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 
@@ -269,7 +269,7 @@
 			<property name="width" value="25%"/>
 			<property name="height" value="60%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="29%"/>
+			<property name="top" value="29.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 
@@ -305,7 +305,7 @@
 			<property name="width" value="23%"/>
 			<property name="height" value="53%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="34%"/>
+			<property name="top" value="34.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 
@@ -315,7 +315,7 @@
 			<property name="width" value="23%"/>
 			<property name="height" value="53%"/>
 			<property name="left" value="70%"/>
-			<property name="top" value="34%"/>
+			<property name="top" value="34.0%"/>
 			<property name="fontColor" value="black"/>
 			<property name="fontSize" value="17"/>
 			<property name="zIndex" value="3"/> 

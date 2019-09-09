@@ -2,16 +2,58 @@
 
 --- @module ncl_generator
 -- Generates ncl final document based on template and using padding document.
--- It uses Lustache a pure Lua Mustache implementation.
+-- It uses Lupa a pure Lua implementation for Jinja2 engine and Lustache to 
+-- process Mustache documents.
+-- To work properly, Lupa need LuLPeg module(a pure Lua Lpeg implementation).
+-- LuLPeg does not need to be imported, but it should be kept in dependences 
+-- folder to be found by Lupa. 
 -- Lustache main module should be kept in dependences folder 
 -- whilst it dependences must be in lustache subfoder  
 
--- only necessary for a more beautiful output in debug mode
 package.path = package.path .. ';dependences/?.lua'
-local lustache = require ("lustache") 
 local json = require ("json")
+
+-- only necessary for a more beautiful output in debug mode
 local pprint = require ("pprint")
 
+local lupa = ''
+local lustache = ''
+
+local data = {}
+
+function handler(evt)
+    if  evt.class == 'ncl' and evt.type == 'attribution' and evt.action == 'start' then
+            local i = 0 
+        if evt.name == 'template' then
+            data.template = evt.value
+            pprint("----Template document-------")
+            pprint(data.template)
+        elseif evt.name == 'padding' then 
+            data.padding = evt.value
+            pprint("----Padding document-------")
+            pprint(data.padding)
+        elseif evt.name == 'mustache' then
+            data.engine = evt.value
+            pprint("----Mustache Template Engine selected-------")
+            pprint(data.engine)
+        elseif evt.name:match("partial") == 'partial' then
+            table.insert(data.partial, evt.name)
+            pprint("----Partial -------")
+            pprint(table.partial[i])
+        end
+    end
+end
+
+event.register(handler)
+
+data.template = "slideShow.ncl.mustache"
+data.padding = "padding.json"
+data.engine = "mustache"
+data.partial = {}
+table.insert (data.partial,"links.mustache")
+table.insert (data.partial,"medias.mustache")
+
+pprint(data)
 
 --- deserialize_json Deserialize padding document.templates..
 -- It checks whether padding document is in correct extension and raise an error otherwise.
@@ -67,11 +109,61 @@ local function handle_template(template_doc)
     return content
 end
 
+local function handle_name(template_doc)
+    name_table = mysplit(template_doc, '.')-- pprint(evt)
+    if string.gmatch(name_table[1], 'child') then
+        name_table = mysplit(name_table[1], '_')
+    end
+    if string.gmatch(name_table[1], 'base') then
+        name_table = mysplit(name_table[1], '_') 
+    end
+    return name_table[1]
+end
+
 --- main handles templating processing using Lupa pure Lua Jinja implementation.
 -- Enable debud mode whether "-d" is passed as arguments.
 -- @param 
 -- @return 
-local function main (data, debug)
+
+local function process_jinja2(data, debug)
+
+
+    DEBUG = debug or true
+
+    local padding_doc = data.padding
+    local template_doc = data.template
+    local engine = data.engine
+
+    if DEBUG then
+        log_initial = string.format("Starting generating ncl document from %s with %s on %s template engine",
+                                    template_doc, padding_doc, engine )
+        pprint(log_initial)
+    end
+
+    local context = deserialize_json(padding_doc)
+
+    if DEBUG then
+        pprint(context)
+    end
+    
+    local env = lupa.configure{
+                loader=lupa.loaders.filesystem('./templates'),
+                trim_blocks=true,
+                lstrip_blocks=true
+    }
+    content = {files_list = context}
+    ncl = lupa.expand_file(template_doc, content)
+
+    ncl_filename = handle_name(template_doc)
+    if DEBUG then
+        pprint(string.format("filename: %s", ncl_filename))
+    end
+    ncl_doc = assert(io.open(ncl_filename .. '.ncl', "w"))
+    ncl_doc:write(ncl)
+    ncl_doc:close()
+end
+
+local function process_mustache(data, debug)
 
     DEBUG = debug or true
 
@@ -140,43 +232,17 @@ local function main (data, debug)
     fh:close()
 end
 
-local data = {}
-
-function handler(evt)
-    if  evt.class == 'ncl' and evt.type == 'attribution' and evt.action == 'start' then
-            local i = 0 
-        if evt.name == 'template' then
-            data.template = evt.value
-            pprint("----Template document-------")
-            pprint(data.template)
-        elseif evt.name == 'padding' then 
-            data.padding = evt.value
-            pprint("----Padding document-------")
-            pprint(data.padding)
-        elseif evt.name == 'mustache' then
-            data.engine = evt.value
-            pprint("----Mustache Template Engine selected-------")
-            pprint(data.engine)
-        elseif evt.name:match("partial") == 'partial' then
-            table.insert(data.partial, evt.name)
-            pprint("----Partial -------")
-            pprint(table.partial[i])
-        end
-    end
+if data.engine == 'jinja2' then
+    lupa = require ("lupa")
+    pprint("Load Jinja2 engine")
+    process_jinja2(data)
+elseif data.engine == 'mustache' then
+    lustache = require ("lustache")
+    pprint("Load Mustache engine")
+    process_mustache(data)
+else 
+    pprint("Engine not recognized")
 end
-
-event.register(handler)
-
-data.template = "slideShow.ncl.mustache"
-data.padding = "padding.json"
-data.engine = "mustache"
-data.partial = {}
-table.insert (data.partial,"links.mustache")
-table.insert (data.partial,"medias.mustache")
-
-pprint(data)
-
-main(data)
 
 event.post('in', {
     class  = 'ncl',
