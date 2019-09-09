@@ -6,12 +6,12 @@ More precisily, it can handle the following formats:
 * web templates languages
   * [Jinja2](http://jinja.pocoo.org)  
   ```bash
-  $ ncl-formats.lua padding.json template_engine=jinja2 template=template.j2 
+  $ lua ncl-formats.lua padding.json jinja2 template.j2 
   ```
 
   * [Mustache](https://mustache.github.io/)  
   ```bash
-  $ ncl-formats.lua padding.json template_engine=jinja2 template=template.mustache
+  $ lua ncl-formats.lua padding.json mustache template.mustache partial1.mustache partial2.mustache ...
   ```
 
 * NCL templates languages
