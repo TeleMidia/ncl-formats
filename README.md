@@ -21,9 +21,6 @@ More precisily, it can handle the following formats:
   * [XTemplate](https://github.com/joeldossantos/aXT)  
   TODO. 
   
-  * [Luar](https://code.google.com/archive/p/luar-template-engine/)  
-  TODO.
-  
   * [LuaTPL](https://github.com/robertogerson/luatpl)  
   TODO.
   
