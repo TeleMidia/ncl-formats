@@ -42,5 +42,5 @@ More precisily, it can handle the following formats:
   
   
   ```bash
-  $ luarocks install ncl-formats
+  $ luarocks install --server=https://luarocks.org/dev ncl-formats
   ```
