@@ -11,7 +11,7 @@ More precisily, it can handle the following formats:
 
   * [Mustache](https://mustache.github.io/)  
   ```bash
-  $ lua ncl-formats.lua padding.json mustache template.mustache partial1.mustache partial2.mustache ...
+  $ lua ncl-formats.lua padding.json mustache template.mustache partial1.mustache partial2.mustache
   ```
 
 * NCL templates languages
